@@ -6,7 +6,6 @@ argon2-cffi-bindings
 importlib-metadata
 intel-openmp
 matplotlib
-mkl-service
 nest-asyncio
 numpy-base
 pandas-datareader
