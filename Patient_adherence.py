@@ -17,14 +17,14 @@ Selected = option_menu(
 
 
 if Selected == "PA Finder":
-     model = st.selectbox('choose a model',
+   model = st.selectbox('choose a model',
       ('Decision tree Classifier', 'K-Nearest Neighbor', 'Logistic Regression'))
 
-    if model =='Decision tree Classifier':
+   if model =='Decision tree Classifier':
        m = pickle.load(open('Decision_Tree_Classifier.sav', 'rb'))
-    elif model =='K-Nearest Neighbor':
+   elif model =='K-Nearest Neighbor':
        m = pickle.load(open('K-Nearest Neighbor.sav', 'rb'))
-    else:
+   else:
        m = pickle.load(open('Logistic_Regression.sav', 'rb'))
 
     # creating a function for Prediction
