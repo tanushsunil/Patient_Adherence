@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
-import web_app.sample_app as sample_app
+import web_app.Individual_performance as Individual_performance
 from PIL import Image
 import web_app.Model_tester as Model_tester
 
@@ -26,7 +26,7 @@ if Selected == "PA Finder":
         default_index=0,
         orientation="horizontal")
     if model_version == "Individual Patient":
-        sample_app.main()
+        Individual_performance.main()
     else:
         st.title('Coming soon! :)')
 
