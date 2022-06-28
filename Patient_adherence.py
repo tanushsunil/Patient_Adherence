@@ -115,7 +115,7 @@ if Selected == "PA Finder":
 
            st.success(adherence_diagnosis)
 
- if __name__ == '__main__':
+  if __name__ == '__main__':
     main()
 
 elif Selected == "Home":
