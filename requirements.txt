@@ -1,25 +1,25 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: win-64
-argon2-cffi==21.3.0
-argon2-cffi-bindings==21.2.0
-ca-certificates==2022.4.26
-charset-normalizer==2.0.4
-importlib-metadata==4.12.0
-intel-openmp==2021.4.0
+argon2-cffi
+argon2-cffi-bindings
+ca-certificates
+charset-normalizer
+importlib-metadata
+intel-openmp
 lz4-c==1.9.3
-matplotlib-base==3.5.1
-matplotlib-inline==0.1.2
-mkl-service==2.4.0
-nest-asyncio==1.5.5
-numpy-base==1.21.5
-pandas-datareader==0.10.0
-pandas-profiling==2.9.0
-prompt-toolkit==3.0.20
-python-dateutil==2.8.2
-python-fastjsonschema==2.15.1
-pytz-deprecation-shim==0.1.0.post0
-scikit-learn==1.0.2
-streamlit-option-menu==0.3.20
-tangled-up-in-unicode==0.1.0
-typing-extensions==4.1.1
+matplotlib-base
+matplotlib-inline
+mkl-service
+nest-asyncio
+numpy-base
+pandas-datareader
+pandas-profiling
+prompt-toolkit
+python-dateutil
+python-fastjsonschema
+pytz-deprecation-shim
+scikit-learn
+streamlit-option-menu
+tangled-up-in-unicode
+typing-extensions
