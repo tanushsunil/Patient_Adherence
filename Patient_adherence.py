@@ -4,8 +4,6 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
-import web_app.Model_tester as Model_tester
-import web_app.Home as Home
 
 st.title("Patient Adherence")
 
