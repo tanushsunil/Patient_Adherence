@@ -5,7 +5,7 @@ argon2-cffi
 argon2-cffi-bindings
 importlib-metadata
 intel-openmp
-lz4-c==1.9.3
+lz4-c
 matplotlib-base
 matplotlib-inline
 mkl-service
