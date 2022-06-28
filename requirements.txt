@@ -7,7 +7,7 @@ importlib-metadata
 intel-openmp
 matplotlib
 nest-asyncio
-numpy-base
+numpy
 pandas-datareader
 pandas-profiling
 prompt-toolkit
