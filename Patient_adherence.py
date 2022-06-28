@@ -17,10 +17,18 @@ Selected = option_menu(
 
 
 if Selected == "PA Finder":
-        model = pickle.load(open('Logistic_Regression.sav', 'rb'))
+     model = st.selectbox('choose a model',
+      ('Decision tree Classifier', 'K-Nearest Neighbor', 'Logistic Regression'))
+
+    if model =='Decision tree Classifier':
+       m = pickle.load(open('Decision_Tree_Classifier.sav', 'rb'))
+    elif model =='K-Nearest Neighbor':
+       m = pickle.load(open('K-Nearest Neighbor.sav', 'rb'))
+    else:
+       m = pickle.load(open('Logistic_Regression.sav', 'rb'))
 
     # creating a function for Prediction
-        def adherence_prediction(input_data):
+  def adherence_prediction(input_data):
 
     # changing the input_data to numpy array
            input_data_as_numpy_array = np.asarray(input_data)
@@ -28,7 +36,7 @@ if Selected == "PA Finder":
     # reshape the array as we are predicting for one instance
            input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
 
-           prediction = model.predict(input_data_reshaped)
+           prediction = m.predict(input_data_reshaped)
            print(prediction)
 
            if (prediction[0] == 0):
@@ -36,8 +44,7 @@ if Selected == "PA Finder":
            else:
               return 'The patient will likely be adhered to the medication'
 
-
-        def main():
+  def main():
 
            # getting the input data from the user
            Age = st.text_input('Age')
@@ -108,9 +115,8 @@ if Selected == "PA Finder":
 
            st.success(adherence_diagnosis)
 
-
-        if __name__ == '__main__':
-             main()
+ if __name__ == '__main__':
+    main()
 
 elif Selected == "Home":
     st.header("What are we solving?")
