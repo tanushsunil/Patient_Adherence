@@ -17,17 +17,9 @@ Selected = option_menu(
 
 
 if Selected == "PA Finder":
-    global model_version
-    model_version = option_menu(
-        menu_title=None,
-        options=["Individual Patient", "Predict for group"],
-        icons=["hexagon", "hexagon-fill"],
-        default_index=0,
-        orientation="horizontal")
-    if model_version == "Individual Patient":
         model = pickle.load(open('Logistic_Regression.sav', 'rb'))
 
-# creating a function for Prediction
+    # creating a function for Prediction
         def adherence_prediction(input_data):
 
     # changing the input_data to numpy array
@@ -119,8 +111,6 @@ if Selected == "PA Finder":
 
            if __name__ == '__main__':
               main()
-    else:
-        st.title('Coming soon! :)')
 
 elif Selected == "Home":
     st.header("What are we solving?")
