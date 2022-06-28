@@ -28,10 +28,9 @@ def model_selection():
 
 def main():
  global dataset, x, y, x_test, x_train, y_test, y_train, y_pred
- dataset = pd.read_csv(
-    r'C:\Users\tanus\Desktop\patient_adherence\Dataset\patient_data_processed.csv')
+ dataset = pd.read_csv(r'Dataset\patient_data_processed.csv')
 
- dataset_2 = pd.read_csv(r'C:\Users\tanus\Desktop\patient_adherence\Dataset\patient_data.csv')   
+ dataset_2 = pd.read_csv(r'Dataset\patient_data.csv')   
  
  
  st.header('Test the performance of our models:')
