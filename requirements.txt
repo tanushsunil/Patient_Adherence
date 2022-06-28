@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: win-64
@@ -17,3 +18,24 @@ scikit-learn
 streamlit-option-menu
 tangled-up-in-unicode
 typing-extensions
+=======
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: win-64
+argon2-cffi
+argon2-cffi-bindings
+importlib-metadata
+intel-openmp
+matplotlib
+nest-asyncio
+numpy
+pandas-datareader
+pandas-profiling
+prompt-toolkit
+python-dateutil
+pytz-deprecation-shim
+scikit-learn
+streamlit-option-menu
+tangled-up-in-unicode
+typing-extensions
+>>>>>>> 0810f56e95aa75de7b22f4746ad304a5dad8f604
