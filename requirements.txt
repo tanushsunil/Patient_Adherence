@@ -3,8 +3,6 @@
 # platform: win-64
 argon2-cffi
 argon2-cffi-bindings
-ca-certificates
-charset-normalizer
 importlib-metadata
 intel-openmp
 lz4-c==1.9.3
