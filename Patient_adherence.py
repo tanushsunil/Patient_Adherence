@@ -28,7 +28,7 @@ if Selected == "PA Finder":
         default_index=0,
         orientation="horizontal")
     if model_version == "Individual Patient":
-<<<<<<< HEAD
+
         model = pickle.load(open('Logistic_Regression.sav', 'rb'))
 
 # creating a function for Prediction
@@ -123,9 +123,6 @@ if Selected == "PA Finder":
 
            if __name__ == '__main__':
               main()
-=======
-        Individual_performance.main()
->>>>>>> 0810f56e95aa75de7b22f4746ad304a5dad8f604
     else:
         st.title('Coming soon! :)')
 
@@ -140,12 +137,10 @@ elif Selected == "Home":
 
 elif Selected == "Models Tester":
     st.write("Coming Soon! :smile:")
-=======
     st.title("What is our model focused on?")
     st.text("This model is focused on the prediction of adherence behavior with individual\nselection. The dataset utilized is historically captured through a medication\nevent monitoring system. When the group who are prone to be non-adherent is\naccurately identified and targeted, it makes the way for improving patient care\nand helps Healthcare workers to assess and develop new strategies.")
 
 
->>>>>>> 0810f56e95aa75de7b22f4746ad304a5dad8f604
 
 
 
