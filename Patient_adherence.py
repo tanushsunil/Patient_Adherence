@@ -28,7 +28,7 @@ if Selected == "PA Finder":
        m = pickle.load(open('Logistic_Regression.sav', 'rb'))
 
     # creating a function for Prediction
-  def adherence_prediction(input_data):
+   def adherence_prediction(input_data):
 
     # changing the input_data to numpy array
            input_data_as_numpy_array = np.asarray(input_data)
@@ -44,7 +44,7 @@ if Selected == "PA Finder":
            else:
               return 'The patient will likely be adhered to the medication'
 
-  def main():
+   def main():
 
            # getting the input data from the user
            Age = st.text_input('Age')
