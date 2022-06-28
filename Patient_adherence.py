@@ -109,8 +109,8 @@ if Selected == "PA Finder":
            st.success(adherence_diagnosis)
 
 
-           if __name__ == '__main__':
-              main()
+        if __name__ == '__main__':
+             main()
 
 elif Selected == "Home":
     st.header("What are we solving?")
