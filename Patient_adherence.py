@@ -186,7 +186,7 @@ elif Selected == "Models Tester":
     if __name__ == '__main__':
      main()
     
- elif Selected == 'About':
+ elif Selected == 'About us':
     
     
     st.title('Hi, Tanush Sunil here! :peace:')
