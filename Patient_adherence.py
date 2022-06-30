@@ -184,7 +184,16 @@ elif Selected == "Models Tester":
         st.success(score*100)
         
     if __name__ == '__main__':
-     main()    
+     main()
+    
+ elif Selected == 'About':
+    
+    
+    st.title('Hi, Tanush Sunil here! :peace:')
+    st.subheader('Hope this app was useful to you :innocent:')
+    st.write('I am a student as of now who is passionate about Data Science and this is my first project. This customer churn app uses three classification models namely Decision tree, Random forest and Naive Bayes from which you can select one just like the best of three when we used to play stone paper scissors. fill in all the details just as in the data set and get the output.')
+    st.write('[More projects in GITHUB >](https://github.com/4nirudh5)')
+    
     
     
     
