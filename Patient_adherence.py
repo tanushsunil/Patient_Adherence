@@ -121,7 +121,7 @@ if Selected == "PA Finder":
 elif Selected == "Home":
     st.header("What are we solving?")
     st.text("The problem addressed by this model is finding out if the patient is medically\nadherent or not. clinical studies have demonstrated that only 50-70% of patients\nadhere properly to prescribed drug therapy. This behavior of adherence failure\ncan cause health issues, hospitalization risk and even death. Patient Adherence\ninsights can prove useful for \n\n     1.Doctors who prescribe drugs\n     2.Drug / Medication producers\n     3.Government")
-    st.image("https://cdn.technologyadvice.com/wp-content/uploads/2020/03/6-Ways-CRM-Stop-Customer-Churn.png")
+    st.image("https://www.omadahealth.com/hs-fs/hubfs/BlogIllustrations_medicationbarriers6.png?width=2860&name=BlogIllustrations_medicationbarriers6.png")
     st.title("What is our model focused on?")
     st.text("This model is focused on the prediction of adherence behavior with individual\nselection. The dataset utilized is historically captured through a medication\nevent monitoring system. When the group who are prone to be non-adherent is\naccurately identified and targeted, it makes the way for improving patient care\nand helps Healthcare workers to assess and develop new strategies.")
 
