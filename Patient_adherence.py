@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 import pickle
+from sklearn.preprocessing import LabelEncoder
+from sklearn import metrics
+from sklearn.model_selection import train_test_split
 import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
@@ -162,18 +165,18 @@ elif Selected == "Models Tester":
         x = dataset.iloc[:, [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 14, 15, 16, 17]]
         y = dataset.iloc[:, 9]
 
-       x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=0)
+        x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=0)
 
-       y_pred = " "
-       score = " "
+        y_pred = " "
+        score = " "
     
 
 
-       if st.button("Test the model"):
-           y_pred = model.predict(x_test)
-           score = metrics.accuracy_score(y_pred, y_test)
-       st.write("The accuracy of the selected model is:")
-       st.success(score*100)
+        if st.button("Test the model"):
+            y_pred = model.predict(x_test)
+            score = metrics.accuracy_score(y_pred, y_test)
+        st.write("The accuracy of the selected model is:")
+        st.success(score*100)
     
     
     
