@@ -10,7 +10,7 @@ from PIL import Image
 
 st.title("Patient Adherence")
 
-st.sidebar.Selected = option_menu(
+    Selected = option_menu(
     menu_title=None,
     options=["Home", "Models Tester", "PA Finder", "About us"],
     icons=["house-fill", "speedometer2", "hexagon-half", "people-fill"],
