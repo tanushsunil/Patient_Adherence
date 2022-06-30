@@ -176,7 +176,7 @@ elif Selected == "Models Tester":
             y_pred = model.predict(x_test)
             score = metrics.accuracy_score(y_pred, y_test)
         st.write("The accuracy of the selected model is:")
-        st.success(score*100)
+        st.success(int(score*100))
         
     if __name__ == '__main__':
      main()    
