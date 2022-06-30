@@ -190,12 +190,12 @@ elif Selected == "Models Tester":
 elif Selected == 'About us':
     
     st.title('About our team:')
-    st.write('This team consists of three members and the main focus of our project is to make it accurate and user-friendly. ')
+    st.write('This team consists of a trio of data science freshers and our main goal is to provide the user with accurate results and a super user-friendly app. ')
     
     st.header('Team Members:')
     
     Selected = option_menu(
-    menu_title=None,
+    menu_title='Team Members:',
     options=["Tanush Sunil", "Abinayasree", "Harshithaa"],
     icons=["lightning-charge", "gem", "emoji-laughing"],
     default_index=0,
