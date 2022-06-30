@@ -179,8 +179,10 @@ elif Selected == "Models Tester":
         if st.button("Test the model"):
             y_pred = model.predict(x_test)
             score = metrics.accuracy_score(y_pred, y_test)
+            
+        score_2 = (int(score)*100 , "%")     
         st.write("The accuracy of the selected model is:")
-        st.success(score*100)
+        st.success(score_2)
         
     if __name__ == '__main__':
      main()    
