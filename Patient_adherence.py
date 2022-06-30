@@ -126,7 +126,8 @@ elif Selected == "Home":
     st.text("This model is focused on the prediction of adherence behavior with individual\nselection. The dataset utilized is historically captured through a medication\nevent monitoring system. When the group who are prone to be non-adherent is\naccurately identified and targeted, it makes the way for improving patient care\nand helps Healthcare workers to assess and develop new strategies.")
 
 elif Selected == "Models Tester":
-    st.write("Coming Soon!")
+    df = pd.read_csv("patient_data_processed.csv")
+    st.dataframe(df)
 
 
 
