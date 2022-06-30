@@ -189,6 +189,10 @@ elif Selected == "Models Tester":
     
 elif Selected == 'About us':
     
+    st.header('About our team:')
+    st.write('This team consists of three members and the main focus of our project is to make it accurate and user-friendly. ')
+    
+    st.title('Team Members:')
     
     Selected = option_menu(
     menu_title=None,
@@ -202,13 +206,18 @@ elif Selected == 'About us':
          st.title('Hello, I\'m Tanush Sunil')
          st.subheader('My perspective on this project')
          st.write('')
-         st.write('[Instagram >](https://www.instagram.com/tanush_sunil/)')
-         st.write('[GitHub >](https://github.com/tanushsunil)')
+         st.write('[Instagram](https://www.instagram.com/tanush_sunil/)')
+         st.write('[GitHub](https://github.com/tanushsunil)')
     elif Selected == 'Abinayasree':
          st.title('Hi, I\'m Abinayasree')
          st.subheader('My perspective on this project')
          st.write('')
-         st.write('[Instagram >](https://www.instagram.com/abbiee__s/)')
+         st.write('[Instagram](https://www.instagram.com/abbiee__s/)')
+    else Selected == 'Harshithaa':
+         st.title('Hi, I\'m Harshithaa')
+         st.subheader('My perspective on this project')
+         st.write('')
+         st.write('[Instagram](https://www.instagram.com/___hershy______/)')
     
     
     
