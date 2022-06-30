@@ -21,16 +21,18 @@ Selected = option_menu(
 
 if Selected == "PA Finder":
    model = st.selectbox('choose a model',
-      ('Decision tree Classifier', 'K-Nearest Neighbor', 'Logistic Regression'))
+      ('Decision tree Classifier', 'K-Nearest Neighbor', 'Logistic Regression', 'Random Forest Classifier'))
 
    if model =='Decision tree Classifier':
        m = pickle.load(open('Decision_Tree_Classifier.sav', 'rb'))
    elif model =='K-Nearest Neighbor':
        m = pickle.load(open('K-Nearest Neighbor.sav', 'rb'))
-   else:
+   elif model == 'Logistic Regression':
        m = pickle.load(open('Logistic_Regression.sav', 'rb'))
-
-    # creating a function for Prediction
+   else:     
+       m = pickle.load(open('Random_Forest_Classifier.sav', 'rb'))
+    
+   # creating a function for Prediction
    def adherence_prediction(input_data):
 
     # changing the input_data to numpy array
@@ -132,7 +134,7 @@ elif Selected == "Models Tester":
     
     def model_selection():
 
-      Model_op = st.selectbox('Which model?',('Logistic Regression Classifier', 'K-Nearest Neighbor', 'Decision Tree Classifier'))
+      Model_op = st.selectbox('Which model?',('Logistic Regression Classifier', 'K-Nearest Neighbor', 'Decision Tree Classifier', 'Random Forest Classifier'))
 
       global model
 
@@ -140,8 +142,10 @@ elif Selected == "Models Tester":
           model = pickle.load(open('Logistic_Regression.sav', 'rb'))
       elif Model_op == 'K-Nearest Neighbor':
           model = pickle.load(open('K-Nearest_Neighbor.sav', 'rb'))
-      else:
+      elif Model_op == 'Decision Tree Classifier':
           model = pickle.load(open('Decision_Tree_Classifier.sav', 'rb'))
+      else:
+          model = pickle.load(open('Random_Forest_Classifier.sav', 'rb'))
 
 
     def main():
