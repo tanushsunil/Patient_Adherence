@@ -213,7 +213,7 @@ elif Selected == 'About us':
          st.subheader('My perspective on this project')
          st.write('')
          st.write('[Instagram](https://www.instagram.com/abbiee__s/)')
-    else Selected == 'Harshithaa':
+    else:
          st.title('Hi, I\'m Harshithaa')
          st.subheader('My perspective on this project')
          st.write('')
