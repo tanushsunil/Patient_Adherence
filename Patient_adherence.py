@@ -186,8 +186,8 @@ elif Selected == "Models Tester":
     if __name__ == '__main__':
      main()
     
- elif Selected == 'About us':
     
+elif Selected == 'About us':
     
     st.title('Hi, Tanush Sunil here! :peace:')
     st.subheader('Hope this app was useful to you :innocent:')
