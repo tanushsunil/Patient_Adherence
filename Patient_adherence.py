@@ -195,7 +195,7 @@ elif Selected == 'About us':
     options=["Tanush Sunil", "Abinayasree", "Harshithaa"],
     icons=["lightning-charge", "gem", "emoji-laughing"],
     default_index=0,
-    orientation="vertical")
+    orientation="horizontal")
     
     
     if Selected == 'Tanush Sunil':
