@@ -198,8 +198,9 @@ elif Selected == 'About us':
     menu_title='Team Members:',
     options=["Tanush Sunil", "Abinayasree", "Harshithaa"],
     icons=["lightning-charge", "gem", "emoji-laughing"],
+    menu_icon=['people-fill']    
     default_index=0,
-    orientation="vertical")
+    orientation="horizontal")
     
     
     if Selected == 'Tanush Sunil':
