@@ -210,6 +210,10 @@ elif Selected == 'About us':
     else:
          st.write('')
          st.write('[Instagram](https://www.instagram.com/___hershy______/)')
+   
+    st.title('Project Description:')
+    st.write('We live a pandemic world which requires high medical attention. Patient adherence plays a vital role in curing that, patient adherence can be defined as whether the patient is adhering to prescribed medication.')
+    st.write('Thank you! <3')
     
     
     
