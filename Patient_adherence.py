@@ -202,19 +202,12 @@ elif Selected == 'About us':
     
     
     if Selected == 'Tanush Sunil':
-         st.title('Hello, I\'m Tanush Sunil')
-         st.subheader('My perspective on this project')
-         st.write('')
          st.write('[Instagram](https://www.instagram.com/tanush_sunil/)')
          st.write('[GitHub](https://github.com/tanushsunil)')
     elif Selected == 'Abinayasree':
-         st.title('Hi, I\'m Abinayasree')
-         st.subheader('My perspective on this project')
          st.write('')
          st.write('[Instagram](https://www.instagram.com/abbiee__s/)')
     else:
-         st.title('Hi, I\'m Harshithaa')
-         st.subheader('My perspective on this project')
          st.write('')
          st.write('[Instagram](https://www.instagram.com/___hershy______/)')
     
