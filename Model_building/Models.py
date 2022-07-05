@@ -10,7 +10,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn import metrics
 import pickle
 
-# Importing Data------------------------------->>Reading .CSV & doing a light processing (Enna ramalingam epidi irukka, data processing la paathadhu)
+# Importing Data------------------------------->>Reading .CSV & doing a light processing
 dataset = pd.read_csv(
     r'C:\Users\tanus\Desktop\patient_adherence\Dataset\patient_data_processed.csv')
 
@@ -75,12 +75,30 @@ def deci_prediction():
     print('The confusion matrix for this model is \n', cm)
 
 # Random Forest Classifier--------------------------------------------------------------------------->>Type 4 Classifier
+def random_forest():
+    global rf_pred
+    rf_pred = RandomForestClassifier(n_estimators=10, criterion = 'entropy', random_state= 0)
+    rf_pred.fit(x_train, y_train)
 
+    y_pred = rf_pred.predict(x_test)
+
+    score = metrics.accuracy_score(y_test, y_pred)
+    print("Accuracy of Random Forest Classifer: ", score*100, "%")
+
+    from sklearn.metrics import confusion_matrix
+    cm= confusion_matrix(y_test, y_pred)
+    print("Confusion Matrix")
+    print(cm)
+
+    results = rf_pred.predict_proba(x_test)[0]
+
+    print(results)
 
 # Predicting results
 lr_prediction()
 knn_prediction()
 deci_prediction()
+random_forest()
 
 
 # Pickling Process---------------------------------------------------------------->>Exporting the Models into .sav files
