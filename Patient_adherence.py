@@ -20,17 +20,7 @@ Selected = option_menu(
 
 
 if Selected == "PA Finder":
-   model = st.selectbox('choose a model',
-      ('Decision tree Classifier', 'K-Nearest Neighbor', 'Logistic Regression', 'Random Forest Classifier'))
-
-   if model =='Decision tree Classifier':
-       m = pickle.load(open('Decision_Tree_Classifier.sav', 'rb'))
-   elif model =='K-Nearest Neighbor':
-       m = pickle.load(open('K-Nearest Neighbor.sav', 'rb'))
-   elif model == 'Logistic Regression':
-       m = pickle.load(open('Logistic_Regression.sav', 'rb'))
-   else:     
-       m = pickle.load(open('Random_Forest_Classifier.sav', 'rb'))
+   m = pickle.load(open('Random_Forest_Classifier.sav', 'rb'))
     
    # creating a function for Prediction
    def adherence_prediction(input_data):
